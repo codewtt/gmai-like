@@ -1,0 +1,8 @@
+<table id="emails-list">
+  <tr><td>ID : <%= @email.id %></td></tr>
+  <tr><td>Object :<h3><%= @email.object %></h3></td></tr>
+  <tr><td>Body : <%= @email.body %></td></tr>
+</table>
+<%= link_to "delete", email_path(@email), method: :delete, class: "btn btn-primary", remote: true %>
+
+<button type="button" name="button">Marquer comme non-lu</button>
